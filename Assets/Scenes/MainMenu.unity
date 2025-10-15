@@ -171,7 +171,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2219546419395840933, guid: 4000e8f7e32db3d4e8e4b471370308e7, type: 3}
       propertyPath: m_Name
-      value: Button (1)
+      value: CreditsButton
+      objectReference: {fileID: 0}
+    - target: {fileID: 4460368324511548909, guid: 4000e8f7e32db3d4e8e4b471370308e7, type: 3}
+      propertyPath: m_text
+      value: "Cr\xE9dits"
       objectReference: {fileID: 0}
     - target: {fileID: 7892066197485612315, guid: 4000e8f7e32db3d4e8e4b471370308e7, type: 3}
       propertyPath: m_Pivot.x
@@ -347,7 +351,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2219546419395840933, guid: 4000e8f7e32db3d4e8e4b471370308e7, type: 3}
       propertyPath: m_Name
-      value: Button (4)
+      value: PlayButton
       objectReference: {fileID: 0}
     - target: {fileID: 2408463926007325348, guid: 4000e8f7e32db3d4e8e4b471370308e7, type: 3}
       propertyPath: m_Colors.m_FadeDuration
@@ -356,6 +360,40 @@ PrefabInstance:
     - target: {fileID: 2408463926007325348, guid: 4000e8f7e32db3d4e8e4b471370308e7, type: 3}
       propertyPath: m_Colors.m_ColorMultiplier
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2408463926007325348, guid: 4000e8f7e32db3d4e8e4b471370308e7, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2408463926007325348, guid: 4000e8f7e32db3d4e8e4b471370308e7, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2408463926007325348, guid: 4000e8f7e32db3d4e8e4b471370308e7, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1141775410}
+    - target: {fileID: 2408463926007325348, guid: 4000e8f7e32db3d4e8e4b471370308e7, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2408463926007325348, guid: 4000e8f7e32db3d4e8e4b471370308e7, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnClickPlay
+      objectReference: {fileID: 0}
+    - target: {fileID: 2408463926007325348, guid: 4000e8f7e32db3d4e8e4b471370308e7, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: MainMenu, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 2408463926007325348, guid: 4000e8f7e32db3d4e8e4b471370308e7, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 4460368324511548909, guid: 4000e8f7e32db3d4e8e4b471370308e7, type: 3}
+      propertyPath: m_text
+      value: 'Jouer
+
+'
       objectReference: {fileID: 0}
     - target: {fileID: 7892066197485612315, guid: 4000e8f7e32db3d4e8e4b471370308e7, type: 3}
       propertyPath: m_Pivot.x
@@ -515,6 +553,50 @@ VideoPlayer:
   m_WaitForFirstFrame: 1
   m_FrameReadyEventEnabled: 0
   m_VideoShaders: []
+--- !u!1 &1141775409
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1141775411}
+  - component: {fileID: 1141775410}
+  m_Layer: 0
+  m_Name: _Scripts
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1141775410
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1141775409}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 61d8dac7450701946a229e2d3632cd0f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &1141775411
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1141775409}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 559.363, y: 560.6787, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1292870417
 GameObject:
   m_ObjectHideFlags: 0
@@ -777,7 +859,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2219546419395840933, guid: 4000e8f7e32db3d4e8e4b471370308e7, type: 3}
       propertyPath: m_Name
-      value: Button (2)
+      value: SettingsButton
+      objectReference: {fileID: 0}
+    - target: {fileID: 4460368324511548909, guid: 4000e8f7e32db3d4e8e4b471370308e7, type: 3}
+      propertyPath: m_text
+      value: "Param\xE8tres"
       objectReference: {fileID: 0}
     - target: {fileID: 7892066197485612315, guid: 4000e8f7e32db3d4e8e4b471370308e7, type: 3}
       propertyPath: m_Pivot.x
@@ -1157,7 +1243,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2219546419395840933, guid: 4000e8f7e32db3d4e8e4b471370308e7, type: 3}
       propertyPath: m_Name
-      value: Button
+      value: QuitButton
+      objectReference: {fileID: 0}
+    - target: {fileID: 4460368324511548909, guid: 4000e8f7e32db3d4e8e4b471370308e7, type: 3}
+      propertyPath: m_text
+      value: Quitter
       objectReference: {fileID: 0}
     - target: {fileID: 7892066197485612315, guid: 4000e8f7e32db3d4e8e4b471370308e7, type: 3}
       propertyPath: m_Pivot.x
@@ -1252,3 +1342,4 @@ SceneRoots:
   - {fileID: 647634880}
   - {fileID: 1292870421}
   - {fileID: 724150452}
+  - {fileID: 1141775411}
