@@ -3,12 +3,15 @@ using UnityEngine.SceneManagement;
 using DG.Tweening;
 using UnityEngine.UI;
 using System.Collections.Generic;
+using UnityEngine.InputSystem;
+using System.Windows;
 
 public class MainMenu : MonoBehaviour
 {
 
     public Image ImageFade;
     public List<MainMenuButton> Buttons;
+    public GameObject MainMenuObject, StartMenuObject;
 
     private void Start()
     {
@@ -30,5 +33,14 @@ public class MainMenu : MonoBehaviour
     private void FadeComplete()
     {
         SceneManager.LoadScene("Gameplay");
+    }
+
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            StartMenuObject.SetActive(false);
+            MainMenuObject.SetActive(true);
+        }
     }
 }
