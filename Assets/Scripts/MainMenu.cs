@@ -11,7 +11,7 @@ public class MainMenu : MonoBehaviour
 
     public Image ImageFade;
     public List<MainMenuButton> Buttons;
-    public GameObject MainMenuObject, StartMenuObject;
+    public GameObject MainMenuObject, StartMenuObject, CreditMenuObject;
 
     private void Start()
     {
