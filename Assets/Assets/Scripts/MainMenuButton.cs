@@ -14,8 +14,8 @@ public class MainMenuButton : MonoBehaviour
 
     public void Start()
     {
-        //_Rect = GetComponent<RectTransform>();
-        //x = _Rect.anchoredPosition.x;
+        _Rect = GetComponent<RectTransform>();
+        x = _Rect.anchoredPosition.x;
     }
 
     public void OnPointEnter()
@@ -23,8 +23,8 @@ public class MainMenuButton : MonoBehaviour
         if (_hidden)
             return;
 
-        //_Rect.DOKill();
-        //_Rect.DOAnchorPosX(x + 50f, 0.5f);
+        _Rect.DOKill();
+        _Rect.DOAnchorPosX(x + 50f, 0.5f);
         ImageOutline.DOKill();
         ImageOutline.DOFade(1, 0.3f);
         UITextMeshPro.DOKill();
@@ -36,8 +36,8 @@ public class MainMenuButton : MonoBehaviour
         if (_hidden)
             return;
 
-        //_Rect.DOKill();
-        //_Rect.DOAnchorPosX(x, 0.5f);
+        _Rect.DOKill();
+        _Rect.DOAnchorPosX(x, 0.5f);
         ImageOutline.DOKill();
         ImageOutline.DOFade(0.3f, 0.2f);
         UITextMeshPro.DOKill();
