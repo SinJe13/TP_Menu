@@ -11,7 +11,7 @@ public class MainMenu : MonoBehaviour
 
     public Image ImageFade;
     public List<MainMenuButton> Buttons;
-    public GameObject MainMenuObject, StartMenuObject, CreditMenuObject;
+    public GameObject MainMenuObject, StartMenuObject, SettingsMenuObject;
 
     private void Start()
     {
@@ -35,11 +35,23 @@ public class MainMenu : MonoBehaviour
         SceneManager.LoadScene("Gameplay");
     }
 
+    public void QuitGame()
+    {
+        Debug.Log("QUIT !");
+        Application.Quit();
+    }
+
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
             StartMenuObject.SetActive(false);
+            MainMenuObject.SetActive(true);
+        }
+        
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            SettingsMenuObject.SetActive(false);
             MainMenuObject.SetActive(true);
         }
     }
